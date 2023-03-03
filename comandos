@@ -113,3 +113,7 @@ $document->find($selector);
 php artisan make:model Scrapping -m
 
 php artisan make:controller Scrapping/ScrappingController
+
+
+php artisan make:model Empresas -m
+php artisan make:controller Empresas/EmpresasController

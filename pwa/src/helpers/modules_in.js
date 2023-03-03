@@ -15,6 +15,9 @@ import LeaderboardIcon from '@mui/icons-material/Leaderboard';
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 import LanIcon from '@mui/icons-material/Lan';
 
+
+import Empresas from '../app/sections/empresas';
+
 export const modules=[
   {
     name:"Home",
@@ -186,7 +189,7 @@ export const modules=[
   {
     name:"Configuración",
     slug:"/dashboard/configuracion",
-    component:Productos,
+    component:Empresas,
     menu:true,
     private:true,
     icon:<SettingsIcon/>,
@@ -194,7 +197,7 @@ export const modules=[
       {
         name:"Plataformas",
         slug:"/dashboard/configuracion",
-        component:Productos,
+        component:Empresas,
         menu:true,
         private:true,
         icon:<LanIcon/>,
@@ -203,7 +206,7 @@ export const modules=[
             name:"Empresas",
             slug:"/dashboard/configuracion/empresas/*",
             url:"/dashboard/configuracion/empresas/list",
-            component:Productos,
+            component:Empresas,
             menu:true,
             private:true,
             items:[],

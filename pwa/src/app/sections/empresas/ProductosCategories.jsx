@@ -4,15 +4,13 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from './MainProductos'
-import Add from '../multimedia/Add'
-import Producto from './Productos'
-import NotFound from '../../../components/NotFound';
+import Home from './MainProductosCategories'
+import Add from './Categorias'
 
 
 const modules = [
   {
-    url:'/list',
+    url:'/',
     component:Home
   },
   {
@@ -20,12 +18,8 @@ const modules = [
     component:Add
   },
   {
-    url:'/list/add',
-    component:Producto
-  },
-  {
-    url:'/list/:id',
-    component:Producto
+    url:'/:id',
+    component:Add
   },
 
 ]
@@ -36,7 +30,6 @@ const App=()=>{
                 {modules.map((row,key)=>{
                   return  <Route exact key={key} path={row.url} element={<>{<row.component/>}</>}/>
                 })}
-                <Route component={NotFound} />
               </Routes>
             </Grid>
 }

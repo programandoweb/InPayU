@@ -5,7 +5,7 @@
 
 *.zip
 # Node artifact files
-#env.bat
+env.bat
 Config.js
 config.js
 node_modules/

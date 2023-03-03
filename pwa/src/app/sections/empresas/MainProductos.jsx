@@ -2,7 +2,7 @@ import Table from '../../../components/Table';
 const td  = [
               {
                 label:"Item",
-                value:"name",
+                value:"label",
                 align:"left"
               },
               {
