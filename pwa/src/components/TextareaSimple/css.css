@@ -1,0 +1,34 @@
+.content-textarea{
+  width: 99.7%;
+  border: solid 2px #ddd;
+  border-bottom: solid 3px #2196f3 !important;
+  position: relative;
+}
+
+label{
+  position: absolute;
+  top:-15px;
+  left:5px;
+  background-color: white;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+textarea{
+  width: 97%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+  min-height: 100px;
+  margin: 1.25%;
+}
+
+textarea:focus{
+  width: 97%;
+}
+
+textarea:focus .content-textarea{
+  background-color: #333;
+  border-bottom: solid 3px #2196f3 !important;
+}

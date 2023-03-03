@@ -1,0 +1,16 @@
+.characteristics{
+  margin: 26px 0;
+}
+.characteristics .name{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.characteristics .valor{
+  display: flex;
+}
+.characteristics .valor .flex{
+  background-color: #d9d9d9;
+  color: #5d5d5d;
+  padding: 10px;
+  padding-right: 50px;
+}

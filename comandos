@@ -1,0 +1,115 @@
+composer create-project laravel/laravel backend
+
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan optimize:clear
+php artisan migrate
+
+composer require laravel/passport
+
+php artisan migrate
+
+php artisan passport:install
+
+
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 1
+Client secret: oC8iWmEBsHRvZPFv6hXk2UYh2YuySRLlMXhglxmM
+Password grant client created successfully.
+Client ID: 2
+Client secret: CANBoIF3KkBurbZIF2t0dHTRwIOqoTfofxmyd7uL
+
+
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+
+cambiar el archivo app/Http/Kernel.php
+
+protected $routeMiddleware = [
+    ...
+    'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+    'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+    'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
+];
+
+php artisan make:model Admin -m
+
+php artisan make:controller Auth/AuthController --model=Auth --resource
+
+php artisan migrate:fresh --seed
+
+php artisan make:model Bancos -m
+php artisan make:seeder BancosSeeder
+php artisan make:model UsersProfile -m
+php artisan make:model MasterTable -m
+php artisan make:seeder MasterTableSeeder
+php artisan make:seeder RoleSeeder
+php artisan make:model UsersCuentasBancaria -m
+php artisan make:controller Users/UserController
+
+Package es un módulo que tiene relación con content porque es en este último donde se guardará la descripción completa de los paquetes
+Así mismo, content es el centro de todos los demás que requiren descripción
+php artisan make:model Lang -m
+php artisan make:model Price -m
+php artisan make:model Content -m
+php artisan make:model Package -m
+
+php artisan make:controller Lang/LangController
+php artisan make:controller Content/ContentController
+php artisan make:controller Package/PackageController
+
+
+php artisan make:seeder LangsSeeder
+php artisan make:seeder PackagesSeeder
+php artisan make:seeder ContentSeeder
+
+php artisan make:controller Courses/CoursesCategoriesController --resource
+php artisan make:controller Courses/CoursesController --resource
+
+php artisan make:seeder CoursesCategoriesSeeder
+php artisan make:seeder CoursesSeeder
+
+
+php artisan make:seeder UserSeeder
+
+php artisan make:seeder TokensSeeder
+
+
+php artisan make:model Setting -m
+
+
+
+
+php artisan make:model ProductsCategories -m
+php artisan make:controller Products/CategoriesController
+php artisan make:seeder ProductsCategoriesSeeder
+php artisan make:model RelProductsMultimedia -m
+php artisan make:model RelProductsCharacteristics -m
+
+
+php artisan make:model Products -m
+php artisan make:controller Products/ProductsController
+php artisan make:seeder ProductsSeeder
+
+
+
+php artisan make:controller Home/HomeController
+php artisan make:seeder MultimediaSeeder
+
+
+
+composer require sunra/php-simple-html-dom-parser
+
+
+Example usage:
+
+use Sunra\PhpSimple\HtmlDomParser;
+
+$document = HtmlDomParser::str_get_html($html_text);
+$document->find($selector);
+
+
+php artisan make:model Scrapping -m
+
+php artisan make:controller Scrapping/ScrappingController

@@ -1,0 +1,26 @@
+:root {
+  --main-color: #000;
+  --circle-color: #a5c206;
+}
+
+.modal-main{
+  padding: 0 !important;
+  border-bottom: 10px var(--main-color) solid;
+}
+
+.modal-main .modal-content{
+  text-align: left;
+  width: 100%;
+}
+.modal-main .modal-circle{
+  height: 100px;
+  width: 100px;
+  background-color:var(--circle-color);
+  text-align: center;
+  padding: 5px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  margin-top: -50px;
+  border: solid 3px #fff;
+}

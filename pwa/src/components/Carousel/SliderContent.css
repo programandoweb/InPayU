@@ -1,0 +1,22 @@
+.slider_content{
+  max-height: 100%;
+  position: relative;
+}
+
+.slider_content .siguiente{
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top:40%;
+  background-color: #fff;
+  padding: 14px 0;
+}
+
+.slider_content .atras{
+  position: absolute;
+  z-index: 100;
+  left: 20px;
+  top:40%;
+  background-color: #fff;
+  padding: 14px 0;
+}

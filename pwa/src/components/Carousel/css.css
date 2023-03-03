@@ -1,0 +1,84 @@
+.gallery{
+  width: 100%;
+  background-color: #fff;
+  box-sizing: content-box;
+  height:100vh;
+  position: relative;
+}
+
+.gallery .items{
+  left: 10px;
+  top: 10px;
+  width: 20%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.gallery .items .item{
+  width: 90%;
+  height: 140px;
+  margin: 5%;
+  background: #333;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+
+.gallery .items .active{
+ border: 5px solid #fff;
+}
+
+.gallery .big{
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .summary{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 73%;
+  margin-left: 26%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  padding: 10px;
+  color: #000;
+}
+
+.gallery .zoom-gallery-content{
+  overflow: hidden;
+  height: 100%;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+
+.zoom {
+  transition: transform .7s ease-in-out;
+  transition: .2s ease;
+ -moz-transition: .2s ease; /* Firefox */
+ -webkit-transition: .2s ease; /* Chrome - Safari */
+ -o-transition: .2s ease; /* Opera */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.fadeIn{
+  animation: fadeIn 1s;
+}
+
+.fadeOut{
+  animation: fadeOut 1.1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
