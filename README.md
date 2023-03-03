@@ -1,2 +1,2 @@
 # InPayU
-gestor de botón de pago configurable para PayU
+Gestor de pagos para la psarela Latinoamericana PayU
