@@ -1,6 +1,14 @@
 # InPayU
 Gestor de pagos para la pasarela Latinoamericana PayU
 
+Stack:
+  Frontend:
+    ReactJS
+    UI MaterialUI
+  Backend:
+    PHP
+    Framework Laravel
+
 Instalación:
 Al clonar el repositorio, nos dirigimos al directorio pwa y ejecutamos el comando npm install
 
