@@ -5,14 +5,14 @@
 
 *.zip
 # Node artifact files
-env.bat
+#env.bat
 Config.js
 config.js
 node_modules/
 dist/
 build/
 ./helpers/Config.js
-.env
+#.env
 build.zip
 
 # Compiled Java class files
